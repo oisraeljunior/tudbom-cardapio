@@ -7,7 +7,7 @@ export default function ProductCard({ product }) {
     <div className={`product-card ${!hasImage ? 'no-image' : ''}`}>
       {hasImage && (
         <div className="product-image-container">
-          <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
+          <img src={product.image} alt={product.name} className="product-image" loading="lazy" width="768" height="510" />
           <div className="price-badge">
             <span className="price-value">{product.price}</span>
           </div>
