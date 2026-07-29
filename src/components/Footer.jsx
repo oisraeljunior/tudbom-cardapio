@@ -8,6 +8,7 @@ export default function Footer() {
         <ul className="info-list">
           <li>Todos os salgados são produzidos pela TudBom Salgados.</li>
           <li>As mini pizzas são fornecidas congeladas e prontas para assar.</li>
+          <li>Os salgados fritos podem ser adquiridos prontos ou crus para fritar na hora.</li>
           <li>As imagens são meramente ilustrativas.</li>
           <li>Consulte disponibilidade e prazo de produção.</li>
         </ul>

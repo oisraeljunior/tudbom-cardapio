@@ -142,7 +142,7 @@ export const menuData = [
   },
   {
     id: 'frituras',
-    title: 'Frituras',
+    title: 'Salgados Fritos',
     bannerImage: '/images/cat_frituras_1784216836695.png',
     description: 'Crocância incomparável por fora e recheios cremosos por dentro. O padrão de qualidade TudBom em cada mordida.',
     products: [

@@ -160,12 +160,52 @@ h1, h2, h3 {
 }
 
 /* Category Filters */
+.category-filters-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: var(--spacing-sm);
+}
+
+.scroll-arrow {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--brand-red);
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-subtle);
+  z-index: 10;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.scroll-arrow:hover {
+  background: var(--brand-red);
+  color: #fff;
+}
+
+.left-arrow {
+  margin-right: 4px;
+}
+
+.right-arrow {
+  margin-left: 4px;
+}
+
 .category-filters-container {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
-  padding-bottom: var(--spacing-sm);
+  scroll-behavior: smooth;
 }
 
 .category-filters-container::-webkit-scrollbar {
