@@ -149,13 +149,13 @@ export const menuData = [
       {
         id: 'coxinha-frango',
         name: 'Coxinha de Frango',
-        ingredients: ['Frango desfiado'],
+        ingredients: ['Recheio de frango desfiado com batata'],
         price: 'R$ 5,50'
       },
       {
         id: 'coxinha-frango-catupiry',
         name: 'Coxinha de Frango com Catupiry',
-        ingredients: ['Frango desfiado', 'Requeijão (Catupiry)'],
+        ingredients: ['Recheio de frango desfiado com batata', 'Requeijão (Catupiry)'],
         price: 'R$ 5,50'
       },
       {
