@@ -10,21 +10,30 @@ export const menuData = [
         name: 'Esfiha de Carne',
         ingredients: ['Carne bovina', 'Tomate', 'Cebola', 'Temperos'],
         price: 'R$ 5,00',
-        image: '/images/esfirra.webp'
+        images: [
+          '/images/produtos/esfirra-carne-1.jpg',
+          '/images/produtos/esfirra-carne-2.jpg'
+        ]
       },
       {
         id: 'hamburguer-assado',
         name: 'Hambúrguer Assado',
         ingredients: ['Hambúrguer bovino', 'Presunto', 'Gergelim'],
         price: 'R$ 5,00',
-        image: '/images/hamburguer.webp'
+        images: [
+          '/images/produtos/hamburguer-assado-1.jpg',
+          '/images/produtos/hamburguer-assado-2.jpg'
+        ]
       },
       {
         id: 'pastelao',
         name: 'Pastelão',
         ingredients: ['Presunto', 'Muçarela', 'Orégano'],
         price: 'R$ 5,00',
-        image: '/images/pastelao.webp'
+        images: [
+          '/images/produtos/pastelao-1.jpg',
+          '/images/produtos/pastelao-2.jpg'
+        ]
       }
     ]
   },
@@ -39,21 +48,27 @@ export const menuData = [
         name: 'Torta de Frango',
         ingredients: ['Frango desfiado'],
         price: 'R$ 5,50',
-        image: '/images/torta-frango.webp'
+        images: [
+          '/images/produtos/torta-frango-1.jpg',
+          '/images/produtos/torta-frango-2.jpg'
+        ]
       },
       {
         id: 'torta-calabresa',
         name: 'Torta de Calabresa',
         ingredients: ['Calabresa', 'Muçarela', 'Orégano'],
         price: 'R$ 5,50',
-        image: '/images/torta-calabresa.webp'
+        image: '/images/produtos/torta-calabresa-1.jpg'
       },
       {
         id: 'torta-presunto-mucarela',
         name: 'Torta de Presunto e Muçarela',
         ingredients: ['Presunto', 'Muçarela'],
         price: 'R$ 5,50',
-        image: '/images/torta-presunto.webp'
+        images: [
+          '/images/produtos/torta-presunto-mucarela-1.jpg',
+          '/images/produtos/torta-presunto-mucarela-2.jpg'
+        ]
       }
     ]
   },
@@ -68,14 +83,20 @@ export const menuData = [
         name: 'Trouxinha de Frango com Bacon',
         ingredients: ['Frango', 'Bacon'],
         price: 'R$ 5,00',
-        image: '/images/trouxinha-bacon.png'
+        images: [
+          '/images/produtos/trouxinha-frango-bacon-1.jpg',
+          '/images/produtos/trouxinha-frango-bacon-2.jpg'
+        ]
       },
       {
         id: 'trouxinha-frango-catupiry',
         name: 'Trouxinha de Frango com Catupiry',
         ingredients: ['Frango', 'Requeijão (Catupiry)'],
         price: 'R$ 5,00',
-        image: '/images/trouxinha-catupiry.png'
+        images: [
+          '/images/trouxinha-catupiry.png',
+          '/images/produtos/trouxinha-frango-catupiry-2.jpg'
+        ]
       }
     ]
   },
@@ -90,14 +111,20 @@ export const menuData = [
         name: 'Enroladinho de Presunto e Muçarela',
         ingredients: ['Presunto', 'Muçarela'],
         price: 'R$ 5,00',
-        image: '/images/enroladinho-presunto.png'
+        images: [
+          '/images/produtos/enroladinho-presunto-mucarela-1.jpg',
+          '/images/produtos/enroladinho-presunto-mucarela-2.jpg'
+        ]
       },
       {
         id: 'enroladinho-salsicha',
         name: 'Enroladinho de Salsicha',
         ingredients: ['Salsicha', 'Molho de tomate'],
         price: 'R$ 5,00',
-        image: '/images/enroladinho-salsicha.png'
+        images: [
+          '/images/produtos/enroladinho-salsicha-1.jpg',
+          '/images/produtos/enroladinho-salsicha-2.jpg'
+        ]
       }
     ]
   },
@@ -112,31 +139,36 @@ export const menuData = [
         id: 'mini-pizza-presunto-mucarela',
         name: 'Mini Pizza de Presunto e Muçarela',
         ingredients: ['Molho de tomate', 'Presunto', 'Muçarela', 'Tomate', 'Orégano'],
-        price: 'R$ 5,50'
+        price: 'R$ 5,50',
+        image: '/images/produtos/mp-presunto.jpg'
       },
       {
         id: 'mini-pizza-calabresa',
         name: 'Mini Pizza de Calabresa',
         ingredients: ['Molho de tomate', 'Muçarela', 'Calabresa', 'Orégano'],
-        price: 'R$ 5,50'
+        price: 'R$ 5,50',
+        image: '/images/produtos/mp-calabresa.jpg'
       },
       {
         id: 'mini-pizza-frango-mucarela',
         name: 'Mini Pizza de Frango e Muçarela',
         ingredients: ['Molho de tomate', 'Frango', 'Muçarela', 'Orégano'],
-        price: 'R$ 5,50'
+        price: 'R$ 5,50',
+        image: '/images/produtos/mp-frango.jpg'
       },
       {
         id: 'mini-pizza-chocolate',
         name: 'Mini Pizza de Chocolate',
         ingredients: ['Ganache', 'Gotas de chocolate'],
-        price: 'R$ 6,00'
+        price: 'R$ 6,00',
+        image: '/images/produtos/mp-chocolate.jpg'
       },
       {
         id: 'mini-pizza-chocolate-disqueti',
         name: 'Mini Pizza de Chocolate com Disqueti',
         ingredients: ['Ganache', 'Chocolate confeitado colorido (Disqueti)'],
-        price: 'R$ 6,00'
+        price: 'R$ 6,00',
+        image: '/images/produtos/mp-disquete.jpg'
       }
     ]
   },
@@ -150,37 +182,74 @@ export const menuData = [
         id: 'coxinha-frango',
         name: 'Coxinha de Frango',
         ingredients: ['Recheio de frango desfiado com batata'],
-        price: 'R$ 5,50'
+        price: 'R$ 5,50',
+        images: [
+          '/images/produtos/coxinha-frango-1.jpg',
+          '/images/produtos/coxinha-frango-2.jpg'
+        ]
       },
       {
         id: 'coxinha-frango-catupiry',
         name: 'Coxinha de Frango com Catupiry',
         ingredients: ['Recheio de frango desfiado com batata', 'Requeijão (Catupiry)'],
-        price: 'R$ 5,50'
+        price: 'R$ 5,50',
+        images: [
+          '/images/produtos/coxinha-frango-catupiry-1.jpg',
+          '/images/produtos/coxinha-frango-catupiry-2.jpg'
+        ]
       },
       {
         id: 'quibe-carne',
         name: 'Quibe de Carne',
         ingredients: ['Massa de quibe', 'Carne moída'],
-        price: 'R$ 5,00'
+        price: 'R$ 5,00',
+        images: [
+          '/images/produtos/quibe-carne-1.jpg',
+          '/images/produtos/quibe-carne-2.jpg'
+        ]
       },
       {
         id: 'quibe-queijo',
         name: 'Quibe de Queijo',
         ingredients: ['Massa de quibe', 'Muçarela'],
-        price: 'R$ 5,00'
+        price: 'R$ 5,00',
+        images: [
+          '/images/produtos/quibe-queijo-1.jpg',
+          '/images/produtos/quibe-queijo-2.jpg'
+        ]
       },
       {
         id: 'risole-carne-queijo',
         name: 'Risole de Carne e Queijo',
         ingredients: ['Carne moída', 'Muçarela'],
-        price: 'R$ 5,00'
+        price: 'R$ 5,00',
+        images: [
+          '/images/produtos/risole-carne-queijo-1.jpg',
+          '/images/produtos/risole-carne-queijo-2.jpg'
+        ],
+        imagePositions: ['center 82%', 'center 68%']
       },
       {
         id: 'risole-presunto-mucarela',
         name: 'Risole de Presunto e Muçarela',
         ingredients: ['Presunto', 'Muçarela'],
-        price: 'R$ 5,00'
+        price: 'R$ 5,00',
+        images: [
+          '/images/produtos/risole-presunto-mucarela-1.jpg',
+          '/images/produtos/risole-presunto-mucarela-2.jpg'
+        ],
+        imagePositions: ['center 82%', 'center center']
+      },
+      {
+        id: 'enroladinho-salsicha-frito',
+        name: 'Enroladinho de Salsicha',
+        ingredients: ['Salsicha', 'Presunto', 'Muçarela'],
+        price: 'R$ 5,00',
+        images: [
+          '/images/produtos/enroladinho-salsicha-frito-1.jpg',
+          '/images/produtos/enroladinho-salsicha-frito-2.jpg'
+        ],
+        imagePositions: ['center 75%', 'center 65%']
       }
     ]
   }

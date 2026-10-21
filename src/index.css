@@ -98,45 +98,22 @@ h1, h2, h3 {
   font-size: 1.1rem;
 }
 
-/* Header & Hero */
+/* Header */
 .header {
   text-align: center;
   background: var(--bg-color);
   position: relative;
-}
-
-.hero-image-container {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,1));
+  padding-top: var(--spacing-xl);
 }
 
 .header-content {
   position: relative;
-  margin-top: -80px;
-  padding: 0 var(--spacing-lg) var(--spacing-xl);
+  padding: 0 var(--spacing-lg) var(--spacing-lg);
   z-index: 2;
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 180px;
   height: auto;
   margin: 0 auto var(--spacing-md);
   display: block;
@@ -339,6 +316,13 @@ h1, h2, h3 {
   height: 240px;
   position: relative;
   background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.product-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .product-image {
@@ -346,50 +330,133 @@ h1, h2, h3 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.3s ease;
+  user-select: none;
 }
 
-.price-badge {
+/* Slider Nav Buttons */
+.slider-nav-btn {
   position: absolute;
-  bottom: -15px;
-  right: 20px;
-  background-color: var(--brand-red);
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: var(--radius-pill);
-  box-shadow: 0 4px 10px rgba(211, 47, 47, 0.4);
-  border: 2px solid #fff;
-  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  color: var(--brand-dark, #2b2b2b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.2s ease;
+  padding: 0;
 }
 
-.price-value {
-  font-size: 1.15rem;
+.slider-nav-btn:hover {
+  background: #ffffff;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.slider-nav-btn.prev {
+  left: 8px;
+}
+
+.slider-nav-btn.next {
+  right: 8px;
+}
+
+/* Slider Status Pills (Fechado / Recheio) */
+.slider-view-badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  padding: 3px;
+  border-radius: 20px;
+  z-index: 3;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.slider-tag {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+}
+
+.slider-tag:hover {
+  color: #fff;
+}
+
+.slider-tag.active {
+  background: var(--brand-yellow, #ffc107);
+  color: #1a1a1a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-weight: 700;
-  letter-spacing: 0.5px;
+}
+
+/* Slider Dots */
+.slider-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  display: flex;
+  gap: 5px;
+  z-index: 3;
+}
+
+.slider-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider-dot.active {
+  width: 18px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .product-info {
   padding: var(--spacing-md);
-  padding-top: var(--spacing-lg); /* Space for the overlapping badge */
-}
-
-.product-card.no-image .product-info {
-  padding-top: var(--spacing-md);
 }
 
 .product-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
 }
 
 .product-header .product-name {
   margin-bottom: 0;
+  line-height: 1.25;
 }
 
 .product-name {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: var(--spacing-xs);
   color: var(--text-main);
@@ -404,6 +471,9 @@ h1, h2, h3 {
   font-weight: 700;
   font-size: 1.15rem;
   white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(211, 47, 47, 0.3);
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
 }
 
 .product-ingredients-section {
@@ -571,14 +641,11 @@ h1, h2, h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .hero-image-container {
-    height: 300px; /* Reduzindo a altura no desktop */
-  }
-  .header-content {
-    margin-top: -140px; /* Puxando o conteúdo mais pra cima */
+  .header {
+    padding-top: 3rem;
   }
   .logo {
-    max-width: 180px;
+    max-width: 230px;
   }
   .header .title {
     font-size: 3rem; /* Aumentando o título */
