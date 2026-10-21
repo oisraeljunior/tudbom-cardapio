@@ -58,7 +58,10 @@ export const menuData = [
         name: 'Torta de Calabresa',
         ingredients: ['Calabresa', 'Muçarela', 'Orégano'],
         price: 'R$ 5,50',
-        image: '/images/produtos/torta-calabresa-1.jpg'
+        images: [
+          '/images/produtos/torta-calabresa-1.jpg',
+          '/images/produtos/torta-calabresa-2.jpg'
+        ]
       },
       {
         id: 'torta-presunto-mucarela',
@@ -94,7 +97,7 @@ export const menuData = [
         ingredients: ['Frango', 'Requeijão (Catupiry)'],
         price: 'R$ 5,00',
         images: [
-          '/images/trouxinha-catupiry.png',
+          '/images/produtos/trouxinha-frango-catupiry-1.jpg',
           '/images/produtos/trouxinha-frango-catupiry-2.jpg'
         ]
       }
