@@ -18,7 +18,7 @@ export const menuData = [
       {
         id: 'hamburguer-assado',
         name: 'Hambúrguer Assado',
-        ingredients: ['Hambúrguer bovino', 'Presunto', 'Gergelim'],
+        ingredients: ['Carne de hambúrguer', 'Presunto', 'Muçarela', 'Catupiry', 'Molho de tomate'],
         price: 'R$ 5,00',
         images: [
           '/images/produtos/hamburguer-assado-1.jpg',
@@ -28,7 +28,7 @@ export const menuData = [
       {
         id: 'pastelao',
         name: 'Pastelão',
-        ingredients: ['Presunto', 'Muçarela', 'Orégano'],
+        ingredients: ['Presunto', 'Muçarela', 'Tomate'],
         price: 'R$ 5,00',
         images: [
           '/images/produtos/pastelao-1.jpg',
@@ -46,7 +46,7 @@ export const menuData = [
       {
         id: 'torta-frango',
         name: 'Torta de Frango',
-        ingredients: ['Frango desfiado'],
+        ingredients: ['Frango com batata', 'Muçarela'],
         price: 'R$ 5,50',
         images: [
           '/images/produtos/torta-frango-1.jpg',
@@ -56,7 +56,7 @@ export const menuData = [
       {
         id: 'torta-calabresa',
         name: 'Torta de Calabresa',
-        ingredients: ['Calabresa', 'Muçarela', 'Orégano'],
+        ingredients: ['Calabresa', 'Tomate', 'Cebola', 'Catupiry'],
         price: 'R$ 5,50',
         images: [
           '/images/produtos/torta-calabresa-1.jpg',
@@ -66,7 +66,7 @@ export const menuData = [
       {
         id: 'torta-presunto-mucarela',
         name: 'Torta de Presunto e Muçarela',
-        ingredients: ['Presunto', 'Muçarela'],
+        ingredients: ['Presunto', 'Muçarela', 'Tomate', 'Catupiry'],
         price: 'R$ 5,50',
         images: [
           '/images/produtos/torta-presunto-mucarela-1.jpg',
@@ -94,7 +94,7 @@ export const menuData = [
       {
         id: 'trouxinha-frango-catupiry',
         name: 'Trouxinha de Frango com Catupiry',
-        ingredients: ['Frango', 'Requeijão (Catupiry)'],
+        ingredients: ['Frango com batata', 'Requeijão (Catupiry)'],
         price: 'R$ 5,00',
         images: [
           '/images/produtos/trouxinha-frango-catupiry-1.jpg',
